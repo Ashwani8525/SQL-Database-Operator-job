@@ -66,3 +66,9 @@ connection.close()
 # Task 4: Create result.csv showcasing the relationship between data.csv and subject.csv
 result_df = pd.merge(data_df, subject_df, on='Subject_id')
 result_df.to_csv('result.csv', index=False)
+
+
+
+
+
+This code reads the two CSV files using pandas, transforms the value2 column by squaring the values, saves the data from both files into MySQL tables, and creates result.csv by merging the two dataframes based on the common Subject_id column. Finally, the resulting dataframe is saved as result.csv.
